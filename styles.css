@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #212121;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px;
+  position: relative;
+}
+
+.card {
+  transform-style: preserve-3d;
+  padding: 0rem 2rem 2rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  background: rgba( 109, 99, 99, 0.10);
+  animation: fade-in 2s;
+}
+
+.card>* {
+  padding-top: 2rem;
+}
+
+h1, h3 {
+  background: #ff7e5f;
+  background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);
+  background: linear-gradient(to right, #feb47b, #ff7e5f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title, .profile-pic, .desc, .skills, .contact-section {
+  transition: all 0.75s ease-out;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-pic {
+  background-image: url("./profile.jpg");
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
+  background-position: top;
+  background-size: cover;
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  z-index: 2;
+  animation: slide 1.5s;
+}
+
+.profile-circle {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: linear-gradient(44.53deg, #25efcb 0%, #12c0f7 94.54%);
+  opacity: 0.8;
+  position: absolute;
+  animation: slide 1.35s;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  flex-basis: 300px;
+  padding-left: 2rem;
+}
+
+.title {
+  animation: slide 0.75s;
+}
+
+.desc {
+  animation: slide 0.90s;
+}
+
+.skills {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  animation: slide 1.05s;
+}
+
+.skill {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 400;
+  font-weight: 500;
+  color: #dbd4d4;
+  padding: 8px 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  margin: 2px 8px 2px 0px;
+  transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  cursor: pointer;
+  background: rgba( 109, 99, 99, 0.30);
+  backdrop-filter: blur( 4px);
+  -webkit-backdrop-filter: blur( 4px);
+}
+
+.skill:hover {
+  color: #bdf3ff;
+}
+
+.contact-section {
+  display: flex;
+  padding-top: 1.5rem;
+  justify-content: space-between;
+  animation: slide 1.20s;
+}
+
+.contact-section>* {
+  font-size: 20px;
+}
+
+.fab.fa-facebook {
+  color: #4c6ef5;
+}
+
+.fas.fa-at {
+  color: #e6330e;
+}
+
+.fab.fa-stack-overflow {
+  color: #ff8c00;
+}
+
+.fab.fa-linkedin-in {
+  color: #00a5ec;
+}
+
+.fab.fa-medium {
+  color: #eee;
+}
+
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .card {
+    max-width: 350px;
+  }
+  .info {
+    padding-left: 0;
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100vh);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
