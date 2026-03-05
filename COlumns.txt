@@ -1,0 +1,31 @@
+
+Column Internal Name	Column Display Name	Type
+Title	Last Name	Single line
+ActiveConcernsPendingIssues	Active Medical Concerns/Pending Issues	Multi line
+AdditionalConsulInfo	Additional Consult Information	Multi line
+Attendees	Attendees	Person or Group
+Baby2MRN	Baby 2 MRN	Single line
+Baby3MRN	Baby 3 MRN	Single line
+Baby4MRN	Baby 4 MRN	Single line
+BabyDOB	Baby DOB	Date
+BabyMRN	Baby MRN	Single line
+DeliveryRoomConsid	Delivery Room Considerations	Multi line
+Description	Description	Multi line
+EDC	EDC	Date
+EndTime	End Time	Date & Time
+FamilySocialConsiderations	Family Social Considerations	Multi line
+FetalDiagnoses	Fetal Diagnoses	Multi line
+MaternalDOB	Maternal DOB	Date
+MaternalMRN	Maternal MRN	Single line
+PregnancyStatus	Pregnancy Status	Choice
+PrimaryOrganSystem	Primary Organ System	Choice
+SecondaryOrganSystem	Secondary Organ System	Choice
+PrenatalImaging	Prenatal Imaging	Multi line
+GeneticTesting	Genetic Testing	Multi line	
+DeliveryMode	Planned Mode of Delivery	Choice
+DeliveryLocation	Planned Delivery Location	Choice
+PGEDependent	PGEs Dependent	Choice
+PostnatalCarePlans	Postnatal Care Plans	Multi line
+FamilySocialConsiderations	Family Social Considerations	Multi line
+PrenatalTeamDiscussion	Prenatal Team Discussion (Date)	Date
+MultiTeamDiscussion	Multidisciplinary Team Discussion (date)	Date
